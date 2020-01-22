@@ -1,0 +1,49 @@
+overerving:
+Wanneer er meerdere classes alle objecten nodig hebben van een classe X, dan is het handig om overerving te gebruiken.
+Op deze manier zul je een keer een class moeten definiëren met de objects die door meerdere classes worden worden overerft
+
+compositie:
+Kan van een class een individueel object aanmaken in een andere classe.
+
+verschil tussen composition en inheritance:
+Het verschil in Java is dat composition het gebruik van een enkel object uit een andere class toe laat. bij inheritance
+zal je alle objecten moeten overnemen.
+------------------------------------------------------------------------------------------------------------------------
+
+composition over inheritance:
+
+- Wanneer je gebruik maakt van overerving en een superclass gebruikt waarin StrafLeraar wordt definiërt en
+hierbij alleen de functie praatMetLageStem() wordt implementeerd wordt praatMetHogeStem() automatisch ook geimplementeerd.
+hieronder nog in pseudocode stijl geschreven voor meer duidelijkheid.
+
+
+class Leraar
+    .geefLes()
+
+         Class Lesvoorbereiden
+            .bereidLes()Class
+
+         Class StrafLeraar
+            .straf()
+
+         ***class StrafLeraarJongen ***
+                .praatMetLageStem()
+
+class Student
+    .studeren
+
+        class Jongen
+            .praatMetLageStem()
+
+        class Meisje
+            .praatMetHogestem()
+------------------------------------------------------------------------------------------------------------------------
+
+inherritance over composition:
+
+- Wanneer er heel veel verschillende classes zijn die allemaal overerven van een class. Bijvoorbeeld class auto. Bij
+  deze class zullen alle andere overervende classes in de meeste gevallen en constructors hebben. Auto's
+  hebben allemaal een snelheid hebben en hebben allemaal bezine wat erin moet alleen de waarde zal anders zijn. zo heb je
+  heel veel verschillende soorten automerken. Op dit moment is het handig om inherritance te gebruiken aangezien je toch
+  bij ieder merk alle objecten nodig hebt uit auto.
+

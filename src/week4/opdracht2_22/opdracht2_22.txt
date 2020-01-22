@@ -1,0 +1,21 @@
+Het diamondproblem ontstaat als volgt:
+We nemen class A, class B, class C en class D als voorbeeld.
+Class B en class C overerft van class A. Class D overerft van class B en class C. Het programma weet nu niet welke van
+de twee classes het moet overerfen.
+
+Een mogelijke oplossing is door Class D niet over te laten erven van class B en class C. In plaats daarvan maak je twee
+nieuwe functies aan in class D waarvan 1 naar class A referreert en de andere naar Class B.
+
+Een andere oplossing is door de classe te omschrijven als A.B.D() en A.C.D(). zo laat je in class D weten welke van de
+kanten je van de diamand pakt.
+
+de volgende talen hebben dit probleem:
+
+- C++
+- Java
+- Python
+
+
+
+
+
