@@ -1,4 +1,4 @@
-package week5.opdracht2_24_her;
+package week5.opdracht2_24;
 
 import java.util.ArrayList;
 import java.util.HashMap;
